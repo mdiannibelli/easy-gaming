@@ -1,0 +1,184 @@
+@import './fonts.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D1D1D;
+    font-family: 'League Spartan Variable', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Container  */
+.nav-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding-inline: 40px;
+    display: flex;
+    position: absolute;
+    background: transparent;
+}
+
+/* Nav Container -> Interactive Nav -> Logo Container */
+.logo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.easy-logo {
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.gaming-logo {
+    color: #D30404;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+/* MAIN -> Left Side */
+.left-side {
+    background-color: #1D1D1D;    
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+
+form .form-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+
+input {
+    background-color: #272727;
+    color: gray;
+    border: 2px solid #505050;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    padding-inline: 18px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: larger;
+    outline-style: none;
+    &:hover {
+        border: 2px solid #880000;
+    }
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 12px;
+    margin: 24px;
+}
+
+.checkbox-container input {
+    appearance: none;
+    background: #272727;
+    cursor: pointer;
+    width: 3px;
+    padding: 12px;
+    height: 3px;
+    appearance: none;
+    border: 2px solid #505050;
+    
+    &:hover {
+        border: 2px solid #bd2525;
+    }
+    
+    &:checked {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+        background-color: #272727;
+    }
+}
+
+.checkbox-container p {
+    color: #505050;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn-container {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.btn-container button {
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    padding-top: 18px;
+    font-weight: 600;
+    font-size: medium;
+    padding-bottom: 18px;
+    border-radius: 12px;
+    border: none;
+    background: #bd2525;
+
+    &:hover {
+        background-color: #880000;
+        transition: 0.3s ease-in-out
+    }
+}
+
+.btn-container a {
+  color: rgb(209, 209, 209);
+  font-size: large;  
+
+  &:hover {
+    color: #bd2525;
+  }
+}
+
+.terms-policy {
+    color: #880000;
+    text-decoration: underline;
+}
+
+/* MAIN -> Right Side */
+.right-side {
+    background-image: url('../public/imgs/register-img.jpg');   
+    background-position: top;
+    background-size: cover;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+}

@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/register.css">
     <title>Registro</title>
 </head>
 <body>
-    <div>
-        <form action="">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text"/>
+    <main>
+        <div class="left-side">
+            <div class="nav-container">
+                <a class="logo-container" href="/">
+                    <h1 class="easy-logo">Easy</h1>
+                    <h1 class="gaming-logo">Gaming</h1>
+                </a>
             </div>
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="text"/>
-            </div>
-            <div>
-                <label for="e-mail">E-mail</label>
-                <input type="email"/>
-            </div>
-            <div>
-                <label for="usuario">Nombre de usuario</label>
-                <input type="text"/>
-            </div>
-            <div>
-                <label for="contraseña">Contraseña</label>
-                <input type="password"/>
-            </div>
-            <div>
-                <label for="re-contraseña">Reingresar Contraseña</label>
-                <input type="password"/>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
+            <div class="form-container">
+                <form>
+                    <div class="form-inputs">
+                        <div>              
+                            <input type="text" placeholder="Nombre"/>
+                        </div>
+                        <div>                   
+                            <input type="text" placeholder="Apellido"/>
+                        </div>
+                        <div>                    
+                            <input type="email" placeholder="E-mail"/>
+                        </div>
+                        <div>                       
+                            <input type="text" placeholder="Confirmar e-mail"/>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Contraseña"/>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirmar contraseña"/>
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <p>Estoy de acuerdo con los <a href="#" class="terms-policy">Terms</a> and <a href="#" class="terms-policy">Privace policy</a></p>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">Enviar</button>
+                        <a href="/">« Volver</a>
+                    </div>
+                </form>
+        </div>
+        </div>
+
+        <div class="right-side"></div>
+    </main>
 </body>
 </html>
