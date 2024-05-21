@@ -97,7 +97,7 @@ input {
     }
 }
 
-.checkbox-container {
+.register-container {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -105,27 +105,7 @@ input {
     margin: 24px;
 }
 
-.checkbox-container input {
-    appearance: none;
-    background: #272727;
-    cursor: pointer;
-    width: 3px;
-    padding: 12px;
-    height: 3px;
-    appearance: none;
-    border: 2px solid #505050;
-    
-    &:hover {
-        border: 2px solid #bd2525;
-    }
-    
-    &:checked {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-        background-color: #272727;
-    }
-}
-
-.checkbox-container p {
+.register-container p {
     color: #505050;
     font-weight: 400;
     font-size: 16px;
@@ -173,7 +153,7 @@ input {
 
 /* MAIN -> Right Side */
 .right-side {
-    background-image: url('../public/imgs/login-img.jpg');   
+    background-image: url('../public/imgs/register-img.jpg');   
     background-position: top;
     background-size: cover;
     bottom: 0;
