@@ -1,0 +1,197 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #010101;
+    height: 100%;
+    width: 100%;
+    padding: 52px;
+    margin-top: 72px;
+    gap: 24px;
+}
+
+footer .primary-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Logo */
+.logo-footer a h1, h2{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+/* STARS */
+.stars-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.stars-container-footer .benefits-text-footer span {
+    color: white;
+}
+
+.stars-container-footer .stars-footer svg {
+    width: 36px;
+    height: 36px;
+}
+
+/* Nav */
+.menu-footer {
+    display: flex;
+    margin-inline: 52px;
+}
+
+.menu-footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-inline: 32px;
+}
+
+.menu-footer .nav-footer a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: large;
+
+    &:hover {
+        color: red
+    }
+}
+
+.menu-footer .nav-footer-secondary a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: large;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.5)
+    }
+}
+
+/* Payment methods */
+.payment-methods-container {
+    background: #0c0c0c9f;
+    padding: 18px;
+    border: 1.5px solid #ffffff10;
+    border-radius: 24px;
+}
+
+.payment-methods-container .payment-methods-title h2 {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: x-large;
+    padding: 12px;
+    padding-bottom: 0;
+}
+
+.payment-methods-container .payments-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.payment-methods-container .payments-container div {
+    margin-inline: 4px;
+}
+
+/* Bar separator */
+.bar-separator {
+    height: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background: #5050507e;
+    width: 80%;
+    margin-inline: auto;
+}
+
+/* Important info */ 
+footer .important-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+footer .important-info div {
+    width: 100%;
+    max-width: 260px;
+}
+
+footer .important-info div p {
+    color: #acacac;
+    font-weight: 300;
+    text-wrap: pretty;
+}
+
+/* Important info / social medias */
+footer .important-info .footer-social-medias {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 12px;
+}
+
+footer .important-info .footer-social-medias a {
+    border-radius: 36px;
+    padding: 12px;
+    height: 52px;
+
+    &:hover {
+        transition: ease-in-out 100ms;
+        transform: scale(110%);
+    }
+}
+
+.instagram-social {
+    background: rgba(72, 124, 12, 0.452);
+    border: 1px solid rgb(62, 94, 2);
+}
+
+.discord-social {
+    background: rgba(29, 3, 122, 0.418);
+    border: 1px solid rgb(5, 15, 102);
+}
+
+.x-social {
+    background: rgba(20, 99, 189, 0.418);
+    border: 1px solid rgb(18, 54, 122);
+}
+
+.youtube-social {
+    background: rgba(122, 3, 3, 0.418);
+    border: 1px solid rgb(78, 3, 3);
+}
+
+.twitch-social {
+    background: rgba(49, 3, 122, 0.418);
+    border: 1px solid rgb(51, 3, 78);
+}
+
+.facebook-social {
+    background: rgba(3, 5, 122, 0.418);
+    border: 1px solid rgb(6, 21, 109);
+}
+
+
+/* Terms */
+.terms-footer {
+    width: 80%;
+    margin-inline: auto;
+}
+.terms-footer span {
+    color: #5050507e;;
+}
+
+.terms-footer span strong {
+    color: #cfcfcf;;
+    font-weight: 300;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
