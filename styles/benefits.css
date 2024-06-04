@@ -29,13 +29,14 @@
     color: white;
     font-weight: 500;
     font-size: x-large;
+    margin-bottom: 0;
+    margin-top: 12px;
 }
 
 .benefits-container .benefits-text .benefit-secondary {
     color: #5a5a5a;
     font-weight: 300;
     font-size: large;
-    margin-top: 8px;
 }
 
 .stars-container {
@@ -58,4 +59,47 @@
     border-color: #31313157;
     height: 82px;
     margin-inline: 24px;
+}
+
+
+
+/* Responsive */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Benefits */
+    .benefits-container .benefits-text .benefit-primary {
+        font-size: large;
+    }
+    
+    .benefits-container .benefits-text .benefit-secondary {
+        font-size: smaller;
+    }
+
+    .stars-container .stars svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .stars-container .benefits-text {
+        font-size: small;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  /* Benefits */
+    .benefits-container .benefits-text .benefit-primary {
+        font-size: large;
+    }
+    
+    .benefits-container .benefits-text .benefit-secondary {
+        font-size: smaller;
+    }
+
+    .stars-container .stars svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .stars-container .benefits-text {
+        font-size: small;
+    }
 }

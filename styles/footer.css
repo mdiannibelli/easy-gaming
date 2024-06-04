@@ -5,7 +5,7 @@ footer {
     height: 100%;
     width: 100%;
     padding: 52px;
-    margin-top: 72px;
+    margin-top: 124px;
     gap: 24px;
 }
 
@@ -195,3 +195,45 @@ footer .important-info .footer-social-medias a {
         cursor: pointer;
     }
 }
+
+
+/* Responsive */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Footer */
+    .primary-footer {
+        flex-wrap: wrap;
+    }
+
+    /* Logo footer */
+    .logo-footer .logo-container h1 {
+        font-size: xx-large;
+    }
+
+    /* Stars */
+    .stars-container-footer .stars-footer svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stars-container-footer .benefits-text-footer span {
+        font-size: smaller
+    }
+
+    /* Menu footer */
+    .menu-footer .nav-footer a {
+        font-size: medium;
+    }
+
+    /* Payments */
+    .payment-methods-container .payment-methods-title h2 {
+        font-size: small;
+    }
+    .payment-methods-container .payments-container {
+        flex-wrap: wrap;
+    }
+
+    /* Social medias */
+    .important-info .footer-social-medias {
+        flex-wrap: wrap !important;
+    }
+  }
