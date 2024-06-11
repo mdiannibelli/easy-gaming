@@ -15,7 +15,8 @@ footer .primary-footer {
 }
 
 /* Footer Logo */
-.logo-footer a h1, h2{
+.logo-footer a h1,
+h2 {
     font-size: 42px;
     font-weight: 600;
 }
@@ -109,7 +110,7 @@ footer .primary-footer {
     margin-inline: auto;
 }
 
-/* Important info */ 
+/* Important info */
 footer .important-info {
     display: flex;
     justify-content: center;
@@ -182,14 +183,17 @@ footer .important-info .footer-social-medias a {
     width: 80%;
     margin-inline: auto;
 }
+
 .terms-footer span {
-    color: #5050507e;;
+    color: #a7a7a7e7;
+    ;
 }
 
 .terms-footer span strong {
-    color: #cfcfcf;;
-    font-weight: 300;
-    
+    color: #cfcfcf;
+    ;
+    font-weight: 500;
+
     &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -198,7 +202,9 @@ footer .important-info .footer-social-medias a {
 
 
 /* Responsive */
+/* XL */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* Footer */
     .primary-footer {
         flex-wrap: wrap;
@@ -228,12 +234,163 @@ footer .important-info .footer-social-medias a {
     .payment-methods-container .payment-methods-title h2 {
         font-size: small;
     }
+
     .payment-methods-container .payments-container {
         flex-wrap: wrap;
     }
 
     /* Social medias */
+    .important-info {
+        flex-wrap: wrap;
+        justify-content: flex-end !important;
+    }
     .important-info .footer-social-medias {
         flex-wrap: wrap !important;
     }
-  }
+}
+
+/* MD */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Footer */
+    footer {
+        padding: 24px;
+    }
+
+    .primary-footer {
+        flex-wrap: wrap;
+    }
+
+    .menu-footer {
+        margin-top: 52px;
+        margin-bottom: 52px;
+        /*  gap: 120px; */
+    }
+
+    /* Logo footer */
+    .logo-footer .logo-container h1 {
+        font-size: xx-large;
+    }
+
+    /* Stars */
+    .stars-container-footer .stars-footer svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stars-container-footer .benefits-text-footer span {
+        font-size: smaller
+    }
+
+    /* Menu footer */
+    .menu-footer .nav-footer a {
+        font-size: medium;
+    }
+
+    /* Payments */
+    .payment-methods-container .payment-methods-title h2 {
+        font-size: small;
+    }
+
+    .payment-methods-container .payments-container {
+        flex-wrap: wrap;
+    }
+
+    /* Social medias */
+    .important-info {
+        flex-wrap: wrap;
+    }
+    .important-info .footer-social-medias {
+        flex-wrap: wrap !important;
+    }
+
+    .important-info div p {
+        font-size: 14px;
+    }
+}
+
+/* SM */
+@media (max-width: 480px) {
+
+    /* Footer */
+    footer {
+        padding: 12px;
+    }
+
+    .primary-footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .menu-footer {
+        margin-top: 52px;
+        margin-bottom: 52px;
+        /*  gap: 120px; */
+    }
+
+    /* Logo footer */
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .logo-footer .logo-container h1 {
+        font-size: xx-large;
+    }
+
+    /* Stars */
+    .stars-container-footer .stars-footer svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stars-container-footer .benefits-text-footer span {
+        font-size: smaller
+    }
+
+    /* Menu footer */
+    .menu-footer {
+        margin-inline: 12px;
+    }
+    .menu-footer .nav-footer a {
+        font-size: large;
+    }
+
+    /* Payments */
+    .payment-methods-container .payment-methods-title h2 {
+        font-size: small;
+    }
+
+    .payment-methods-container .payments-container {
+        flex-wrap: wrap;
+    }
+
+    .payment-methods-container .payments-container div svg {
+        width: 24px; 
+        height: 24px;
+    }
+
+    .payment-methods-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Social medias */
+    .important-info {
+        flex-wrap: wrap;
+    }
+    .important-info .footer-social-medias {
+        flex-wrap: wrap !important;
+    }
+
+    .important-info div p {
+        font-size: 12px;
+    }
+
+    .terms-footer span {
+        font-size: 12px;
+    }
+}

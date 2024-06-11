@@ -1,4 +1,5 @@
 @import './fonts.css';
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +11,9 @@ body {
     font-family: 'League Spartan Variable', sans-serif;
 }
 
-.logo-container, .aside-nav-container a, .nav-container-categories a {
+.logo-container,
+.aside-nav-container a,
+.nav-container-categories a {
     text-decoration: none;
 }
 
@@ -57,7 +60,7 @@ aside {
 
 /* -> Header -> Nav Container -> Interactive Nav */
 .interactive-nav {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -193,13 +196,81 @@ aside {
 
 
 /* Responsive */
+/* XL */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* slider */
     .wallpaper-carousel {
         max-height: 320px;
     }
+
     .main-text p {
         width: 10%;
     }
-  }
-  
+}
+
+/* MD */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Nav logo */
+    .logo-container h1 {
+        font-size: 24px
+    }
+
+    /* slider */
+    .wallpaper-carousel {
+        max-height: 240px;
+    }
+
+    .main-text p {
+        width: 14%;
+    }
+
+    .main-text {
+        left: 8rem
+    }
+}
+
+/* SM */
+@media (max-width: 480px) {
+
+    /* aside */
+    aside {
+        text-align: center;
+    }
+
+    /* navbar */
+    .secondary-navbar .aside-nav-container a {
+        margin-left: 8px;
+        font-size: smaller;
+    }
+
+    .nav-container-categories {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 12px;
+    }
+
+    /* navlogo */
+    .interactive-nav {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    /* slider */
+    .wallpaper-carousel {
+        height: 425px;
+    }
+
+    .carousel .carousel-inner .carousel-item img {
+        opacity: 0.4;
+    }
+
+    .main-text p {
+        width: 24%;
+    }
+
+    .main-text {
+        left: 5rem;
+    }
+}

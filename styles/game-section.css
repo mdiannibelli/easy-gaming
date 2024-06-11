@@ -19,7 +19,7 @@
 }
 
 .game-section .games-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 42px;
     gap: 40px;
@@ -87,20 +87,25 @@
 
 
 /* Responsive */
+/* XL */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* Game section */
     .game-section .games-container {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        padding-inline: 12px;
     }
-  }
+}
 
 
-  @media (min-width: 768px) and (max-width: 991.98px) {
-/* Game section */
-   .game-section .games-container {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+/* LG */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Game section */
+    .game-section .games-container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
     .game-section .games-container div {
@@ -109,5 +114,59 @@
 
     .game-section .games-container div a picture img {
         width: 320px;
+    }
+}
+
+/* MD */
+@media (min-width: 481px) and (max-width: 768px) {
+    .game-section .games-container div a picture img {
+        width: 100%;
+        height: 100%
+    }
+
+    .game-info {
+        margin-top: 12px;
+    }
+}
+
+/* SM */
+@media (max-width: 480px) {
+
+    /* slider */
+    .main-text h1 {
+        font-size: 24px;
+    }
+
+    .main-text div p {
+        font-size: 18px;
+    }
+
+    .main-text div span {
+        font-size: 20px;
+    }
+
+    /* game-section */
+    .game-section .games-container div {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .game-section .games-container div a picture img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .game-info {
+        margin-top: 12px;
+    }
+
+    .game-section .games-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-inline: 24px;
+    }
+
+    .discount {
+        font-size: 14px;
     }
 }
