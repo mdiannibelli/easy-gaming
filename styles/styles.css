@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -237,6 +238,11 @@ aside {
     /* aside */
     aside {
         text-align: center;
+    }
+
+    .secondary-navbar .aside-nav-container {
+        text-align: center; 
+        padding-inline: 12px;
     }
 
     /* navbar */

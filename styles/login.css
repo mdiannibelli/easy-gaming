@@ -162,3 +162,23 @@ input {
     top: 0;
     width: 50%;
 }
+
+/* SM */
+@media (max-width: 480px) {
+    main {
+        display: flex;
+    }
+    .left-side {
+        z-index: 20;
+    
+    }
+    form {
+        margin-top: 72px;
+    }
+    form .form-inputs {
+        margin: 0;
+    }
+    .right-side {
+        position: relative;
+    }
+}

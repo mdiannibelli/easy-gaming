@@ -1,0 +1,167 @@
+section {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* LEFT */
+section .cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(51, 51, 51, 0.801);
+    border-radius: 8px;
+    padding: 32px;
+    max-width: 620px;
+}
+
+section .cart-container .cart-game {
+    width: 100%;
+}
+
+section .cart-container .cart-game {
+    display: flex; 
+    text-decoration: none;
+}
+
+section .cart-container .cart-game img {
+    width: 220px;
+    height: 120px;
+    border: 1px solid #D30404;
+    border-radius: 4px;
+}
+
+section .cart-container .cart-game .game-info {
+    width: 100%;
+    margin: 12px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section .cart-container .cart-game .game-info p {
+    color: white;
+    text-align: end;
+}
+
+section .cart-container .cart-game .game-info span {
+    color: #D30404;
+}
+
+section .cart-container .cart-game .game-info button {
+    color: white;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #d30404d5;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #D30404;
+        animation-duration: 300ms;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* RIGHT */
+section .cart-info {
+    display: flex;
+    flex-direction: column;
+    margin: 52px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(51, 51, 51, 0.801);
+    padding: 24px;
+    height: max-content;
+}
+
+section .cart-info h3 {
+    color: rgba(255, 255, 255, 0.767);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section .cart-info .cart-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section .cart-info span strong {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section .cart-info button {
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #D30404;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 0px 12px 0px;
+    font-size: 16px;
+    font-weight: 300;
+    &:hover {
+        background-color: #ff0505;
+        transition: all 300ms ease-in-out;
+    }
+}
+section .cart-info button .span-btn {
+    color: white;
+    font-weight: 600;
+}
+
+/* MD */
+@media (min-width: 481px) and (max-width: 768px) {
+    section {
+        padding-inline: 6px;
+        flex-direction: column;
+    }
+
+    section .cart-container {
+        margin-inline: auto;
+        gap: 0;
+    }
+}
+
+
+/* SM */
+@media (max-width: 480px) {
+    section {
+        padding-inline: 6px;
+        flex-direction: column;
+    }
+    section .cart-container {
+        max-width: 400px;
+        width: 100%;
+        
+    }
+
+    section .cart-container .cart-game img {
+        width: 160px;
+        height: 120px;
+    }
+
+    section .cart-container .cart-game .game-info p {
+        font-size: 10px;
+        
+    }
+
+    section .cart-container .cart-game .game-info button {
+        font-size: 10px;        
+        padding: 3px 6px 3px 6px;
+    }
+    
+}
