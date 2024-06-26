@@ -116,6 +116,18 @@ aside {
     padding-inline: 54px;
 }
 
+.icons-logos>* {
+    border: 1px solid #272727;
+    padding: 8px 12px 8px 12px;
+    border-radius: 12px;
+}
+
+.icons-logos>*:hover {
+    transition: ease-in-out 100ms;
+    transform: scale(120%);
+}
+
+
 /* -> Header -> Nav Category */
 
 .nav-category-container {
@@ -149,6 +161,7 @@ aside {
 
 .wallpaper-carousel {
     max-height: 620px;
+    min-height: 620px;
     object-fit: cover;
 }
 
@@ -228,7 +241,7 @@ aside {
     }
 
     .main-text {
-        left: 8rem
+        left: 8rem;
     }
 }
 
@@ -241,7 +254,7 @@ aside {
     }
 
     .secondary-navbar .aside-nav-container {
-        text-align: center; 
+        text-align: center;
         padding-inline: 12px;
     }
 
@@ -252,9 +265,17 @@ aside {
     }
 
     .nav-container-categories {
-        flex-wrap: wrap;
         justify-content: center;
         column-gap: 12px;
+    }
+
+    .nav-container-categories a {
+        margin-inline: 4px !important;
+        font-size: 12px;
+    }
+
+    .nav-container-categories a p {
+        margin-top: 2px;
     }
 
     /* navlogo */
